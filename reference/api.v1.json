@@ -1,0 +1,39 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "api",
+    "version": "1.0",
+    "contact": {
+      "name": "Ante Primorac"
+    },
+    "description": "api description"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:3000"
+    }
+  ],
+  "tags": [],
+  "paths": {
+    "/endpoint": {
+      "get": {
+        "summary": "Your GET endpoint",
+        "tags": [],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "../models/model.v1.json"
+                }
+              }
+            }
+          }
+        },
+        "operationId": "get-endpoint",
+        "description": "endpoint description"
+      }
+    }
+  }
+}
